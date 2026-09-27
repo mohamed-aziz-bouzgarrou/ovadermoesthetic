@@ -139,19 +139,17 @@ function HomePage() {
             rel='noreferrer'>
             Itinéraire <ArrowUpRight size={15} />
           </a>
-          <div
-            className='map-placeholder'
-            aria-label='Plan de situation, 25 Rue du N à Choisy-le-Roi'>
-            <span className='map-street map-street-one' />
-            <span className='map-street map-street-two' />
-            <span className='map-street map-street-three' />
-            <span className='map-block map-block-one' />
-            <span className='map-block map-block-two' />
-            <span className='map-block map-block-three' />
-            <span className='map-pin'>
-              <MapPin size={20} fill='currentColor' />
-            </span>
-            <span className='map-label'>Ovadermoesthetic</span>
+          <div className='map-embed-wrap'>
+            <iframe
+              title='Carte Ovadermoesthetic'
+              src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1314.7307546381953!2d2.420072674867147!3d48.77307891196246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6749deeebf99b%3A0xcf6868eeaffd504f!2sOvaadermoesthetic!5e0!3m2!1sen!2stn!4v1790543875094!5m2!1sen!2stn'
+              width='600'
+              height='450'
+              style={{ border: 0 }}
+              allowFullScreen=''
+              loading='lazy'
+              referrerPolicy='strict-origin-when-cross-origin'
+            />
           </div>
           <p className='hours-note'>
             Horaires sur rendez-vous · Contactez-nous pour convenir d’un
