@@ -84,6 +84,7 @@ main { flex: 1; }
 .services-page { padding: 72px 0 115px; }
 .services-page-heading { margin-bottom: 36px; }
 .services-page-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.service-card-full .treatment-list li { grid-template-columns: minmax(0, 1fr) auto; }
 .service-card-full { min-height: 320px; }
 .service-card { min-width: 0; min-height: 310px; padding: 25px 25px 22px; display: flex; flex-direction: column; border-right: 1px solid #d8d0c9; border-bottom: 1px solid #d8d0c9; background: rgba(255,253,250,.47); animation: card-arrive .6s both; animation-delay: calc(var(--card-index) * 35ms); }
 .service-card-top { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; }
@@ -186,6 +187,7 @@ main { flex: 1; }
   .intro-section { grid-template-columns: .8fr 2fr; gap: 35px; padding-block: 95px; }
   .intro-stamp { display: none; }
   .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .services-page-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
   .service-card { min-height: 290px; }
   .booking-content { gap: 50px; }
   .time-options { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -216,6 +218,11 @@ main { flex: 1; }
   .intro-copy > p { font-size: 12px; }
   .services-section { padding-block: 76px 78px; }
   .section-heading { display: block; margin-bottom: 34px; }
+  .services-page { padding-block: 54px 76px; }
+  .services-page-heading h2 { font-size: 36px; }
+  .services-page-heading h2 br { display: none; }
+  .services-page-grid { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .service-card-full { min-height: 0; }
   .section-heading > p { width: auto; max-width: 390px; margin-top: 18px; font-size: 12px; }
   .services-grid { grid-template-columns: 1fr; }
   .service-card { min-height: 0; padding: 22px 20px 18px; }
